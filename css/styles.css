@@ -1,0 +1,404 @@
+:root {
+  --main-title-color: #212121;
+  --secondary-title-color: #212121;
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --secondary-text-color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-type: none;
+}
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+}
+
+.header-list .active-link {
+  color: var(--accent-color);
+}
+
+/* ----------------HEADER------------- */
+
+.header {
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  margin-right: 94px;
+}
+
+.logo-right-header {
+  color: #000000;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-link,
+.header-tel,
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.header-link {
+  display: block;
+  padding: 32px 0;
+}
+
+.header-link:focus,
+.header-link:hover {
+  color: var(--accent-color);
+}
+
+.header-mail {
+  margin-right: 50px;
+}
+
+.header-tel,
+.header-mail {
+  color: var(--main-text-color);
+  padding: 32px 0;
+}
+
+.header-tel:hover,
+.header-mail:hover,
+.header-tel:focus,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+/* ++++++++++++++++++INDEX.HTML++++++++++++++++++ */
+
+/* ----------------HERO------------- */
+
+.hero {
+  background-color: #2f303a;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero > .container {
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+}
+
+/* ----------------FEATURES------------- */
+
+.features > .container {
+  display: flex;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item:not(last-child) {
+  margin-right: 30px;
+}
+
+.features-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+
+  margin-bottom: 10px;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------DIRECTIONS------------- */
+
+.directions {
+  padding-top: 0;
+}
+
+.directions-list {
+  display: flex;
+}
+
+.directions-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.directions-title {
+  margin-bottom: 50px;
+}
+
+.directions-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+/* ----------------TEAM------------- */
+
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.team-list > .team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.team-img-after {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-text,
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-item-title {
+  color: var(--secondary-title-color);
+  margin-bottom: 10px;
+}
+
+/* ----------------FOOTER------------- */
+
+.footer {
+  background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-right-footer {
+  color: #ffffff;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-link-map {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-link-mail {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-link-mail,
+.footer-link-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ++++++++++++++++++PORTFOLIO.HTML++++++++++++++++++ */
+
+/* ----------------PORTFOLIO------------- */
+
+.portfolio-list-btn {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.portfolio-item-btn {
+  display: flex;
+}
+
+.button-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+  border: 0;
+}
+
+.button-btn:not(last-child) {
+  margin-right: 8px;
+}
+
+.button-btn:hover,
+.button-btn:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-list > .portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.portfolio-after-img {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.portfolio-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+
+  margin-bottom: 4px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
