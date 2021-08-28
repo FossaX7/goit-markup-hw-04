@@ -78,12 +78,14 @@ body {
 /* ----------------HEADER------------- */
 
 .header {
+  max-width: 1600px;
+  border-bottom: 1px solid #ececec;
+  margin: auto;
 }
 
 .header > .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-navigation {
@@ -119,7 +121,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 
 .header-link {
@@ -127,9 +128,21 @@ body {
   padding: 32px 0;
 }
 
-.header-link:focus,
-.header-link:hover {
+.header-tel:hover,
+.header-mail:hover,
+.header-tel:focus,
+.header-mail:focus,
+.header-mail:focus .header-icon,
+.header-mail:hover .header-icon,
+.header-tel:focus .header-icon,
+.header-tel:hover .header-icon {
+  fill: var(--accent-color);
   color: var(--accent-color);
+}
+
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .header-mail {
@@ -140,23 +153,26 @@ body {
 .header-mail {
   color: var(--main-text-color);
   padding: 32px 0;
+  display: flex;
+  align-items: center;
 }
 
-.header-tel:hover,
-.header-mail:hover,
-.header-tel:focus,
-.header-mail:focus {
-  color: var(--accent-color);
-}
 /* ++++++++++++++++++INDEX.HTML++++++++++++++++++ */
 
 /* ----------------HERO------------- */
 
 .hero {
-  background-color: #2f303a;
-
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/img-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero > .container {
@@ -215,6 +231,34 @@ body {
   margin-bottom: 10px;
 }
 
+.features-icon-first::before,
+.features-icon-second::before,
+.features-icon-third::before,
+.features-icon-fourth::before {
+  content: '';
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.features-icon-first::before {
+  background-image: url(../images/features/Group\ 1\ .svg);
+}
+
+.features-icon-second::before {
+  background-image: url(../images/features/Group\ 2\ .svg);
+}
+
+.features-icon-third::before {
+  background-image: url(../images/features/Group\ 3\ .svg);
+}
+
+.features-icon-fourth::before {
+  background-image: url(../images/features/Group\ 4\ .svg);
+}
+
 .features-text {
   font-size: 14px;
   line-height: 1.71;
@@ -251,6 +295,12 @@ body {
 
 /* ----------------TEAM------------- */
 
+.team {
+  max-width: 1600px;
+  background-color: #f5f4fa;
+  margin: auto;
+}
+
 .team-title {
   margin-bottom: 50px;
 }
@@ -270,6 +320,11 @@ body {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-text,
@@ -286,13 +341,111 @@ body {
   margin-bottom: 10px;
 }
 
+.team-text {
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-item-social {
+  width: 44px;
+  height: 44px;
+}
+
+.team-item-social:not(:last-child) {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.team-social-link:hover,
+.team-social-link:focus,
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.team-social-icon {
+  fill: #afb1b8;
+}
+
+/* ----------------CLIENTS------------- */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* ----------------FOOTER------------- */
 
 .footer {
+  max-width: 1600px;
   background-color: #2f303a;
 
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: auto;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-right-footer {
@@ -300,7 +453,7 @@ body {
 }
 
 .logo-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -309,22 +462,70 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-right: 70px;
 }
 
 .footer-link-map {
   color: #ffffff;
-  display: block;
+  display: flex;
   margin-bottom: 9px;
 }
 
 .footer-link-mail {
-  display: block;
+  display: flex;
   margin-bottom: 9px;
 }
 
 .footer-link-mail,
 .footer-link-tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-right {
+}
+
+.footer-social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-sical-icon {
+  fill: #ffffff;
 }
 
 /* ++++++++++++++++++PORTFOLIO.HTML++++++++++++++++++ */
@@ -379,6 +580,14 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-after-img {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
