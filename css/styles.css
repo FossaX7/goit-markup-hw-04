@@ -117,10 +117,12 @@ body {
 .header-link,
 .header-tel,
 .header-mail {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
 }
 
 .header-link {
@@ -220,21 +222,7 @@ body {
   margin-right: 30px;
 }
 
-.features-item-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-
-  margin-bottom: 10px;
-}
-
-.features-icon-first::before,
-.features-icon-second::before,
-.features-icon-third::before,
-.features-icon-fourth::before {
+.features-item::before {
   content: '';
   display: inline-block;
   width: 270px;
@@ -244,19 +232,30 @@ body {
 }
 
 .features-icon-first::before {
-  background-image: url(../images/features/Group\ 1\ .svg);
+  background-image: url(../images/features/group-first\ .svg);
 }
 
 .features-icon-second::before {
-  background-image: url(../images/features/Group\ 2\ .svg);
+  background-image: url(../images/features/group-second\ .svg);
 }
 
 .features-icon-third::before {
-  background-image: url(../images/features/Group\ 3\ .svg);
+  background-image: url(../images/features/group-third\ .svg);
 }
 
 .features-icon-fourth::before {
-  background-image: url(../images/features/Group\ 4\ .svg);
+  background-image: url(../images/features/group-fourth.svg);
+}
+
+.features-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -356,7 +355,7 @@ body {
 }
 
 .team-item-social:not(:last-child) {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .team-social-link {
