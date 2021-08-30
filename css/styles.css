@@ -115,8 +115,7 @@ body {
 }
 
 .header-link,
-.header-tel,
-.header-mail {
+.hover-focus {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -130,14 +129,12 @@ body {
   padding: 32px 0;
 }
 
-.header-tel:hover,
-.header-mail:hover,
-.header-tel:focus,
-.header-mail:focus,
-.header-mail:focus .header-icon,
-.header-mail:hover .header-icon,
-.header-tel:focus .header-icon,
-.header-tel:hover .header-icon {
+.header-link:hover,
+.header-link:focus,
+.hover-focus:hover,
+.hover-focus:focus,
+.hover-focus:hover .header-icon,
+.hover-focus:focus .header-icon {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
@@ -151,8 +148,7 @@ body {
   margin-right: 50px;
 }
 
-.header-tel,
-.header-mail {
+.hover-focus {
   color: var(--main-text-color);
   padding: 32px 0;
   display: flex;
@@ -328,7 +324,6 @@ body {
 
 .team-text,
 .team-item-title {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -336,11 +331,13 @@ body {
 }
 
 .team-item-title {
+  font-weight: 500;
   color: var(--secondary-title-color);
   margin-bottom: 10px;
 }
 
 .team-text {
+  font-weight: 400;
   margin-bottom: 16px;
 }
 
